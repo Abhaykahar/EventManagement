@@ -11,7 +11,6 @@ const EventManagement = () => {
     date: '',
     location: '',
     maxAttendees: '',
-    image: null
   });
   const [rsvpStatus, setRsvpStatus] = useState({});
   const navigate = useNavigate();
@@ -141,14 +140,7 @@ const EventManagement = () => {
             required
           />
         </div>
-        <div className="form-group mb-3">
-          <label className='mb-1'>Image Upload</label>
-          <input
-            type="file"
-            className="form-control"
-            onChange={(e) => setNewEvent({ ...newEvent, image: e.target.files[0] })}
-          />
-        </div>
+      
         <button type="submit" className="btn btn-dark mt-3">Create Event</button>
       </form>
       </div>
