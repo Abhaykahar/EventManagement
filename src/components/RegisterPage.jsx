@@ -25,7 +25,7 @@ const RegisterPage = () => {
     localStorage.setItem('users', JSON.stringify(existingUsers));
 
     alert('Registration successful! Please log in.');
-    navigate('/login'); 
+    navigate('/'); 
   };
 
   return (
@@ -47,7 +47,7 @@ const RegisterPage = () => {
         <button type="submit" className="btn btn-dark mx-auto d-block">Register</button>
       </form>
       <div className="mt-3">
-        <p className='text-end'>Already have an account? <Link to="/login" className='text-dark'>Login here</Link>.</p>
+        <p className='text-end'>Already have an account? <Link to="/" className='text-dark'>Login here</Link>.</p>
       </div>
             </div>
         </div>

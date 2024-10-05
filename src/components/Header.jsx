@@ -10,7 +10,7 @@ const Header = () => {
   const handleLogout = () => {
     localStorage.removeItem('token');
     toast.success('Logged out successfully!');
-    navigate('/login'); // Redirect to login page
+    navigate('/'); // Redirect to login page
   };
 
   return (
@@ -43,7 +43,7 @@ const Header = () => {
             ) : (
               <>
                 <li className="nav-item">
-                  <Link className="nav-link text-light" to="/login">
+                  <Link className="nav-link text-light" to="/">
                     Login
                   </Link>
                 </li>

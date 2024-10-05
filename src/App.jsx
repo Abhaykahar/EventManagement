@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <div className="container mt-3">
         <Routes>
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="/" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/events" element={<EventManagement />} />
         </Routes>
